@@ -1,7 +1,5 @@
-<?php
-    $titulo = "Sobre mí";
-?>
-<h2 class="titulo"><?php echo $titulo; ?></h2>
+
+<h2 class="titulo">Sobre mí</h2>
 
 <div class="about">
     <div class="intro">

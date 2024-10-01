@@ -49,16 +49,135 @@
     
     <div class="secciones">
         <section id="about">
-            <?php include_once __DIR__ . "/src/views/about.php"; ?>
+            <h2 class="titulo">Sobre mí</h2>
+
+            <div class="about">
+                <div class="intro">
+                    <p>Hola, mi nombre es</p>
+                    <h1>Ignacio Pelayo.</h1>
+                    <p>Desarrollador Frontend con experiencia en creación de interfaces de usuario atractivas y funcionales. Experto en tecnologías clave como React.</p>
+                </div>
+                
+
+                <div class="intereses">
+                    <h4>Mis intereses</h4>
+                    <p>Soy una persona muy activa, practico JiuJitsu y otros deportes, me gustan los videojuegos y las nuevas tecnologías en general, soy melómano y toco el bajo.</p>
+
+                    <button class="neon boton" id="btnCapacidades2">Saber más</button>
+                </div>
+
+            </div>
         </section>
 
         <section id="capacidades">
-            <?php include_once __DIR__ . "/src/views/capacidades.php"; ?>
+            <h2 class="titulo">Capacidades</h2>
+
+            <div class="capacidades">
+
+                <div class="tecnologias">
+                    <h4>Tecnologías</h4>
+                    <div class="grid-tecnologias">
+                        <div class="contenedor-tecnologias neon">
+                            <img src="/build/img/capacidades/react.png">
+                            <p>React</p>
+                        </div>
+
+                        <div class="contenedor-tecnologias neon">
+                            <img src="/build/img/capacidades/php.png">
+                            <p>PhP</p>
+                        </div>
+
+                        <div class="contenedor-tecnologias neon">
+                            <img src="/build/img/capacidades/sass.png">
+                            <p>Sass</p>
+                        </div>
+
+                        <div class="contenedor-tecnologias neon">
+                            <img src="/build/img/capacidades/tailwind.png">
+                            <p>TailWind</p>
+                        </div>
+
+                        <div class="contenedor-tecnologias neon">
+                            <img src="/build/img/capacidades/sql.png">
+                            <p>SQL</p>
+                        </div>
+
+                        <div class="contenedor-tecnologias neon">
+                            <img src="/build/img/capacidades/typescript.png">
+                            <p>TypeScript</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+                <div class="idiomas"> 
+                    <h4>Idiomas</h4>
+                    <div>
+                        <p class="contenedor-idiomas"><span>Español:</span>&nbsp;Nativo</p>
+                        <p class="contenedor-idiomas"><span>Inglés:</span>&nbsp;Nivel C</p>
+                        <p class="contenedor-idiomas"><span>Checo:</span>&nbsp;Iniciándome</p>
+                    </div>
+                        
+                </div>
+            </div>
         </section>
         
         <section id="proyectos">
-            <?php include_once __DIR__ . "/src/views/proyectos.php"; ?>
-            <?php include_once __DIR__ . "/src/views/modales.php"; ?>
+            
+            <h2 class="titulo">Proyectos</h2>
+
+            <div class="proyectos">
+                
+                <button class="contenedor bienes neon" id="bienes" onclick="crearModal('bienes', 'modal-bienes-1', 'close')">
+                    <p>Página para una inmobiliaria usando <span>php</span>, <span>SQL</span> y <span>Sass</span></p>
+                </button>
+
+                <button class="contenedor salon neon" id="salon" onclick="crearModal('salon', 'modal-salon-1', 'close2')">
+                    <p>Página para un salón de belleza usando <span>php</span>, <span>SQL</span> y <span>Sass</span></p>
+                </button>
+
+                <button class="contenedor neon" id="portfolio">
+                    <p>Pequeña descripción</p>
+                </button>
+                    
+                <button class="contenedor neon" id="portfolio">
+                    <p>Pequeña descripción</p>
+                </button>
+            </div>
+
+
+            <!--  Bienes raices -->
+
+            <div id="modal-bienes-1" class="modal">
+                <span class="close" id="close">&times;</span>
+                <div class="imagenes">
+                    <div class="modal-content">
+                        <img src="/build/img/proyectos/bienes/1.jpg" alt="bienes1">
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- App Salon -->
+
+            <div id="modal-salon-1" class="modal">
+                <span class="close" id="close2">&times;</span>
+                <div class="imagenes">
+                    <div class="modal-content mtop">
+                        <img src="/build/img/proyectos/salon/1.jpg" alt="salon1">
+                    </div>
+                    <div class="modal-content">
+                        <img src="/build/img/proyectos/salon/2.jpg" alt="salon2">
+                    </div>
+                    <div class="modal-content">
+                        <img src="/build/img/proyectos/salon/3.jpg" alt="salon3">
+                    </div>
+                    <div class="modal-content">
+                        <img src="/build/img/proyectos/salon/4.jpg" alt="salon4">
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     

@@ -1,7 +1,5 @@
-<?php
-    $titulo = "Capacidades";
-?>
-<h2 class="titulo"><?php echo $titulo; ?></h2>
+
+<h2 class="titulo">Capacidades</h2>
 
 <div class="capacidades">
 

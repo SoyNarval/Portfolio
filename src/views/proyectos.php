@@ -1,8 +1,5 @@
-<?php
-    $titulo = "Proyectos";
-    $carpeta = "";
-?>
-<h2 class="titulo"><?php echo $titulo; ?></h2>
+
+<h2 class="titulo">Proyectos</h2>
 
 <div class="proyectos">
     
