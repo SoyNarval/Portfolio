@@ -1,0 +1,81 @@
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contenedor{
+        margin: 2rem;
+        margin-bottom: 6rem;
+        width: 80vw;
+        height: 30vh;
+        background-color: $primary;
+        text-align: center;
+        justify-self: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 100s;
+        
+        p{
+            opacity: 0;
+            span{
+                color: $accent;
+            }
+        }
+        
+        
+        &:hover{
+            background-color: white;
+            background-image: none;
+            z-index: 1;
+            p{
+                opacity: 1;
+                color: black
+            }
+        }
+    }
+}
+
+@include tablet{
+    .proyectos{
+    @include grid(2, 2rem);
+
+        .contenedor{
+            min-width: 300px;
+            max-width: 300px;
+            margin: 2rem auto; /* Centra el div horizontalmente */
+            background-color: $primary;
+            text-align: center;
+            justify-self: center;
+            align-items: center;
+            transition: background-color 500ms;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@include desktop{
+    .proyectos{
+    @include grid(2, 4rem);
+
+        .contenedor{
+            min-width: 400px;
+            max-width: 600px;
+            margin: 0 auto; /* Centra el div horizontalmente */
+            background-color: $primary;
+            text-align: center;
+            justify-self: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}
+.bienes{
+    background-image: url(/build/img/proyectos/bienes/1.JPG);
+    background-size: cover;
+}
+
+.salon{
+    background-image: url(/build/img/proyectos/salon/1.JPG);
+    background-size: cover;
+}

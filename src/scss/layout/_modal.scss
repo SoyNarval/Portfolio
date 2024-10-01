@@ -1,0 +1,59 @@
+.modal {
+    display: none; /* Oculta la modal por defecto */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    @include tablet{
+        position: absolute;
+    }
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.74);
+
+    .imagenes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+    }
+    button{
+        cursor: pointer;
+    }
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    margin-bottom: 2rem;
+    @include tablet{
+        max-width: 60%;
+    }
+    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #dcf748;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@include desktop{
+    .mtop{
+    margin-top: 200rem;
+    }   
+}

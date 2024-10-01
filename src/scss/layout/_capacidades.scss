@@ -1,0 +1,116 @@
+
+
+.capacidades{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 2rem;
+    .tecnologias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grid-tecnologias{
+            @include grid( 2, 2rem);
+        }
+
+    }
+
+}
+
+// Hay que hacer el tamaño tablet
+
+@include tablet{
+
+    .capacidades{
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+        margin-bottom: 2rem;
+        .tecnologias{
+            display: flex;
+            flex-direction: column;
+
+            .grid-tecnologias{
+                @include grid( 3, 2rem);
+            }
+        
+        }
+    }
+}
+
+@include desktop{
+
+    .capacidades{
+        @include grid(2, 2rem);
+        flex: auto;
+        margin-bottom: 0;
+        .tecnologias{
+            display: flex;
+            flex-direction: column;
+
+            .grid-tecnologias{
+                @include grid( 3, 2rem);
+            }
+        }
+    }
+}
+
+.idiomas{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    .contenedor-idiomas{
+        display: flex;
+        padding: 2rem;
+        background-color: white;
+        border: 1px solid $primary;
+        color: black;
+        span{
+            text-transform: uppercase;
+            color: $accent;
+        }
+        
+    }
+}
+
+.contenedor-tecnologias{
+    background-color: $blanco;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    transition: all .5s ease-out;
+    img{
+        width: 90%;
+        background-color: transparent;
+    }
+    p{
+        display: none;
+    }
+
+    
+    &:hover{
+        display: flex;
+        flex-direction: column;
+        background-color: #c5c4c46e;
+        z-index: 1;
+        img{
+            display: none;
+        }
+        p{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            opacity: 1;
+        }
+    }
+}
+
+// Barra de Carga
