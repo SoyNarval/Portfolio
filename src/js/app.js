@@ -4,6 +4,9 @@ const about = document.getElementById('about');
 
 btnAbout.addEventListener('click', () =>{
     about.scrollIntoView({ behavior: 'smooth'});
+    menu.style.display = "none";
+    cerrar.style.display = "none";
+    abrir.style.display = "block"
 })
 
 const btnCapacidades = document.getElementById('btnCapacidades');
@@ -11,6 +14,9 @@ const capacidades = document.getElementById('capacidades');
 
 btnCapacidades.addEventListener('click', () =>{
     capacidades.scrollIntoView({ behavior: 'smooth'});
+    menu.style.display = "none";
+    cerrar.style.display = "none";
+    abrir.style.display = "block"
 })
 
 const btnCapacidades2 = document.getElementById('btnCapacidades2');
@@ -18,6 +24,9 @@ const capacidades2 = document.getElementById('capacidades');
 
 btnCapacidades2.addEventListener('click', () =>{
     capacidades2.scrollIntoView({ behavior: 'smooth'});
+    menu.style.display = "none";
+    cerrar.style.display = "none";
+    abrir.style.display = "block"
 })
 
 const btnProyectos = document.getElementById('btnProyectos');
@@ -25,6 +34,9 @@ const proyectos = document.getElementById('proyectos');
 
 btnProyectos.addEventListener('click', () =>{
     proyectos.scrollIntoView({ behavior: 'smooth'});
+    menu.style.display = "none";
+    cerrar.style.display = "none";
+    abrir.style.display = "block"
 })
 
 
@@ -51,10 +63,11 @@ function crearModal(botonId, modalId, close) {
 }
 
         // Abrir menú 
+const abrir = document.getElementById('abrir');
+const cerrar = document.getElementById('cerrar');
+const menu = document.getElementById('menu');
 document.addEventListener('DOMContentLoaded', () => {
-    const abrir = document.getElementById('abrir');
-    const cerrar = document.getElementById('cerrar');
-    const menu = document.getElementById('menu');
+    
             
     abrir.onclick = function() {
         menu.style.display = "block";
