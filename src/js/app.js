@@ -14,9 +14,6 @@ const capacidades = document.getElementById('capacidades');
 
 btnCapacidades.addEventListener('click', () =>{
     capacidades.scrollIntoView({ behavior: 'smooth'});
-    menu.style.display = "none";
-    cerrar.style.display = "none";
-    abrir.style.display = "block"
 })
 
 const btnCapacidades2 = document.getElementById('btnCapacidades2');
@@ -24,9 +21,6 @@ const capacidades2 = document.getElementById('capacidades');
 
 btnCapacidades2.addEventListener('click', () =>{
     capacidades2.scrollIntoView({ behavior: 'smooth'});
-    menu.style.display = "none";
-    cerrar.style.display = "none";
-    abrir.style.display = "block"
 })
 
 const btnProyectos = document.getElementById('btnProyectos');
@@ -34,9 +28,6 @@ const proyectos = document.getElementById('proyectos');
 
 btnProyectos.addEventListener('click', () =>{
     proyectos.scrollIntoView({ behavior: 'smooth'});
-    menu.style.display = "none";
-    cerrar.style.display = "none";
-    abrir.style.display = "block"
 })
 
 
