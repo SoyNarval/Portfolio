@@ -15,11 +15,13 @@ body {
     line-height: 1.8;
     background-color: $background;
     color: $text;
+    overflow: hidden;
+    overflow-x: hidden;
     
     @include tablet{
         display: flex;
         height: 100vh;
-        overflow: hidden;
+        
         aside{
 
             float: left;
