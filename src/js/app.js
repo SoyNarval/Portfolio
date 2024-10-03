@@ -4,9 +4,6 @@ const about = document.getElementById('about');
 
 btnAbout.addEventListener('click', () =>{
     about.scrollIntoView({ behavior: 'smooth'});
-    menu.style.display = "none";
-    cerrar.style.display = "none";
-    abrir.style.display = "block"
 })
 
 const btnCapacidades = document.getElementById('btnCapacidades');
