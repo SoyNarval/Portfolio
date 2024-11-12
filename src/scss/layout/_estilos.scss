@@ -8,6 +8,7 @@
         flex-direction: column;
         position: fixed;
         width: 100%;
+        height: auto;
         margin-bottom: 2rem;
         background-color: $background;
         z-index: 5;
@@ -61,7 +62,7 @@
     }
 
 }
-@include tablet{
+@include desktop{
 
     .box{
         margin-right: 2rem;
@@ -80,6 +81,7 @@
             padding-left: 2rem;
             padding-right: 2rem;
             width: 10%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -204,7 +206,7 @@ button{
             display: flex;
             flex-direction: column;
             margin: 0 2rem;
-            @include tablet{
+            @include desktop{
                 @include grid (2, 10rem);
                 justify-content: center;
                 align-items: center;
@@ -216,13 +218,24 @@ button{
             .intro{
                 display: flex;
                 flex-direction: column;
-                
+                h1{
+                    margin: 0 0 6rem 0;
+                }
+                p{
+                    margin: 0;
+                }
             }
 
             .intereses{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                .saber{
+                    display: none;
+                    @include desktop{
+                        display: block;
+                    }
+                }
             }
         }
     }

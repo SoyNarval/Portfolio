@@ -29,16 +29,13 @@ btnProyectos.addEventListener('click', () =>{
 
 
         // Mostrar Proyectos
-function crearModal(botonId, modalId, close) {
+function crearModal(botonId, modalId) {
     const btn = document.getElementById(botonId);
     const modal = document.getElementById(modalId);
-    const span = document.getElementById(close);
 
     
     modal.style.display = "flex";
-    span.onclick = function() {
-        modal.style.display = "none";
-    };
+    
     modal.onclick = () =>{
         modal.style.display = "none";
     }
