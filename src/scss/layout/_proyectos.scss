@@ -60,8 +60,7 @@
     @include grid(2, 4rem);
 
         .contenedor{
-            min-width: 400px;
-            max-width: 600px;
+            min-width: 350px;
             margin: 0 auto; /* Centra el div horizontalmente */
             background-color: $primary;
             text-align: center;

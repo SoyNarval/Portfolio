@@ -146,15 +146,15 @@ button{
     border-radius: 2rem;
     transition: filter .3s ease-in-out;
     &:hover{
-    filter: drop-shadow(0px 0px 30px $accent);
+        filter: drop-shadow(0px 0px 30px $accent);
     }
 }
 
 .neon{
     transition: filter .3s ease-in-out;
     &:hover{
-    filter: drop-shadow(0px 0px 30px $accent);
-    z-index: 5;
+        filter: drop-shadow(0px 0px 30px $accent);
+    z-index: 4;
     }
 }
 
@@ -199,13 +199,23 @@ button{
             margin-top: 4rem;
             margin-bottom: 5rem;
             border-bottom: 1px solid $primary;
+
+            @include tablet{
+                margin-top: 20rem;
+            }
             
+            @include desktop{
+                margin-top: 4rem;
+            }
         }
         // About me
         .about{
             display: flex;
             flex-direction: column;
             margin: 0 2rem;
+
+            
+
             @include desktop{
                 @include grid (2, 10rem);
                 justify-content: center;
@@ -223,6 +233,9 @@ button{
                 }
                 p{
                     margin: 0;
+                    &:last-child{
+                        margin-bottom: 2rem;
+                    }
                 }
             }
 
@@ -235,6 +248,10 @@ button{
                     @include desktop{
                         display: block;
                     }
+                }
+                h4{
+                    border-bottom: 1px solid $primary;
+                    padding: 0 3rem;
                 }
             }
         }
