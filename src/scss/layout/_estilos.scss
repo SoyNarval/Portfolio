@@ -166,20 +166,19 @@ button{
     overflow-y: scroll;
     @include desktop{
         scroll-snap-type: y mandatory;
-        
         scroll-behavior: smooth;
     }
     &::-webkit-scrollbar {
         display: none;
     }
     section{
-        @include desktop{
-        height: 100vh;
-        margin: 20rem 2rem;
-        }
         &:first-child,
         &:last-child{
             padding-top: 20rem;
+        }
+        @include desktop{
+        height: 100vh;
+        margin: 20rem 2rem;
         }
         @include tablet{
             &:first-child,
@@ -195,15 +194,17 @@ button{
         box-sizing: border-box;
         scroll-snap-align: start;
         
+        &:first-child{
+            @include tablet{
+                margin-top: 20rem;
+            }
+        }
+        
         .titulo{
             margin-top: 4rem;
             margin-bottom: 5rem;
             border-bottom: 1px solid $primary;
 
-            @include tablet{
-                margin-top: 20rem;
-            }
-            
             @include desktop{
                 margin-top: 4rem;
             }

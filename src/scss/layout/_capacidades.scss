@@ -65,6 +65,9 @@
     flex-direction: column;
     align-content: center;
     text-align: center;
+    h4{
+        border-bottom: 1px solid $primary;
+    }
     .contenedor-idiomas{
         display: flex;
         padding: 2rem;
@@ -81,13 +84,19 @@
 
 .contenedor-tecnologias{
     background-color: $blanco;
-    height: 200px;
-    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;  
     transition: all .5s ease-out;
     z-index: 3;
+    height: 150px;
+    width: 150px;
+
+    @include telefono{
+        height: 200px;
+        width: 200px;
+    }
+    
     img{
         width: 90%;
         background-color: transparent;
@@ -96,22 +105,24 @@
         display: none;
     }
 
-    
-    &:hover{
+    @include telefono{
+        &:hover{
         display: flex;
         flex-direction: column;
         background-color: #c5c4c46e;
         
-        img{
-            display: none;
-        }
-        p{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            opacity: 1;
+            img{
+                display: none;
+            }
+            p{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                opacity: 1;
+            }
         }
     }
+    
 }
 
 // Barra de Carga
