@@ -1,9 +1,15 @@
         // Botones
 const btnAbout = document.getElementById('btnAbout');
 const about = document.getElementById('about');
+const enlace = document.getElementsByClassName('enlaces')
 
 btnAbout.addEventListener('click', () =>{
     about.scrollIntoView({ behavior: 'smooth'});
+    if(window.innerWidth <= 1024){
+        menu.style.display = "none";
+        cerrar.style.display = "none";
+        abrir.style.display = "block"
+    }
 })
 
 const btnCapacidades = document.getElementById('btnCapacidades');
@@ -11,6 +17,11 @@ const capacidades = document.getElementById('capacidades');
 
 btnCapacidades.addEventListener('click', () =>{
     capacidades.scrollIntoView({ behavior: 'smooth'});
+    if(window.innerWidth <= 1024){
+        menu.style.display = "none";
+        cerrar.style.display = "none";
+        abrir.style.display = "block"
+    }
 })
 
 const btnCapacidades2 = document.getElementById('btnCapacidades2');
@@ -25,6 +36,11 @@ const proyectos = document.getElementById('proyectos');
 
 btnProyectos.addEventListener('click', () =>{
     proyectos.scrollIntoView({ behavior: 'smooth'});
+    if(window.innerWidth <= 1024){
+        menu.style.display = "none";
+        cerrar.style.display = "none";
+        abrir.style.display = "block"
+    }
 })
 
 
@@ -55,15 +71,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
             
     abrir.onclick = function() {
-        menu.style.display = "block";
-        abrir.style.display = "none";
-        cerrar.style.display = "block"
+        if(window.innerWidth <= 1024){
+            menu.style.display = "block";
+            abrir.style.display = "none";
+            cerrar.style.display = "block"
+        }
     }
         
     cerrar.onclick = function() {
-        menu.style.display = "none";
-        cerrar.style.display = "none";
-        abrir.style.display = "block"
+        if(window.innerWidth <= 1024){
+            menu.style.display = "none";
+            cerrar.style.display = "none";
+            abrir.style.display = "block"
+        }
     }
 });
         

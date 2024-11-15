@@ -172,8 +172,7 @@ button{
         display: none;
     }
     section{
-        &:first-child,
-        &:last-child{
+        &:first-child{
             padding-top: 20rem;
         }
         @include desktop{
