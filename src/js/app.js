@@ -43,26 +43,6 @@ btnProyectos.addEventListener('click', () =>{
     }
 })
 
-
-        // Mostrar Proyectos
-function crearModal(botonId, modalId) {
-    const btn = document.getElementById(botonId);
-    const modal = document.getElementById(modalId);
-
-    
-    modal.style.display = "flex";
-    
-    modal.onclick = () =>{
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-        modal.style.display = "none";
-        }
-    };
-}
-
         // Abrir menú 
 const abrir = document.getElementById('abrir');
 const cerrar = document.getElementById('cerrar');

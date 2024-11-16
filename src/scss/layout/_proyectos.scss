@@ -42,7 +42,7 @@
     @include grid(2, 2rem);
 
         .contenedor{
-            min-width: 300px;
+            min-width: 70%;
             max-width: 300px;
             margin: 2rem auto; /* Centra el div horizontalmente */
             background-color: $primary;
@@ -61,7 +61,8 @@
     @include grid(2, 4rem);
 
         .contenedor{
-            min-width: 350px;
+            min-width: 90%;
+            min-height: 50%;
             margin: 0 auto; /* Centra el div horizontalmente */
             background-color: $primary;
             text-align: center;
