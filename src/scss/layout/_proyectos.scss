@@ -36,10 +36,10 @@
         }
     }
 }
-
+// Cambiar modo tablet
 @include tablet{
     .proyectos{
-    @include grid(2, 2rem);
+    display: flex;
 
         .contenedor{
             min-width: 70%;
@@ -58,18 +58,19 @@
 
 @include desktop{
     .proyectos{
-    @include grid(2, 4rem);
+        height: 100vh;
+        @include grid(2, 4rem);
 
-        .contenedor{
-            min-width: 90%;
-            min-height: 50%;
-            margin: 0 auto; /* Centra el div horizontalmente */
-            background-color: $primary;
-            text-align: center;
-            justify-self: center;
-            align-items: center;
-            cursor: pointer;
-        }
+            .contenedor{
+                min-width: 90%;
+                min-height: 50%;
+                margin: 0 auto; /* Centra el div horizontalmente */
+                background-color: $primary;
+                text-align: center;
+                justify-self: center;
+                align-items: center;
+                cursor: pointer;
+            }
     }
 }
 .bienes{

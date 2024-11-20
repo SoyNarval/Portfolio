@@ -44,16 +44,20 @@
 
 @include desktop{
 
-    .capacidades{
-        @include grid(2, 2rem);
-        flex: auto;
-        margin-bottom: 0;
-        .tecnologias{
-            display: flex;
-            flex-direction: column;
+    .contenedor-capacidades{
+        height: 100vh;
+        
+        .capacidades{
+            @include grid(2, 2rem);
+            flex: auto;
+            margin-bottom: 0;
+            .tecnologias{
+                display: flex;
+                flex-direction: column;
 
-            .grid-tecnologias{
-                @include grid( 3, 2rem);
+                .grid-tecnologias{
+                    @include grid( 3, 2rem);
+                }
             }
         }
     }
@@ -102,6 +106,7 @@
     }
     p{
         display: none;
+        cursor: default;
     }
 
     @include telefono{

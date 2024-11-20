@@ -89,4 +89,4 @@ function createStar() {
 // Crear estrellas continuamente
 setInterval(createStar, 100);
 
-        // Barra de carga
+    // Barra de carga
