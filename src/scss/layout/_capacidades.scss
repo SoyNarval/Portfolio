@@ -106,10 +106,10 @@
     justify-content: center;  
     transition: all .5s ease-out;
     z-index: 3;
-    min-height: 100px;
-    min-width: 100px;
-    max-height: 150px;
-    max-width: 150px;
+    width: 100%;
+    height: auto;
+    max-height: 15rem;
+    max-width: 15rem;
     
     img{
         background-color: transparent;
