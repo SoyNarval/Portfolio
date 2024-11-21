@@ -8,10 +8,11 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    
 }
 body {
     font-family: $fuente_principal;
-    font-size: 1.6rem;
+    font-size: 1.6vw;
     line-height: 1.8;
     background-color: $background;
     color: $text;
@@ -19,9 +20,7 @@ body {
     overflow-x: hidden;
     
     @include tablet{
-        display: flex;
-        height: 100vh;
-        
+        display: flex;        
         aside{
 
             float: left;
@@ -34,6 +33,9 @@ body {
 p {
     color: $text;
     font-size: 3rem;
+    @include desktop{
+        font-size: 2vw;
+    }
 }
 a {
     text-decoration: none;
@@ -58,15 +60,26 @@ h1 {
     font-size: 11.5rem;
     color: $primary;
     text-align: left;
+    @include desktop{
+        font-size: 7vw;
+    }
 }
 h2 {
     font-size: 5rem;
     margin-bottom: 0;
+    @include desktop{
+        font-size: 3vw;
+    }
 }
 h3 {
     font-size: 3.5rem;
+    @include desktop{
+        font-size: 2.5vw;
+    }
 }
 h4 {
     font-size: 3rem;
+    @include desktop{
+        font-size: 2vw;
+    }
 }
-
