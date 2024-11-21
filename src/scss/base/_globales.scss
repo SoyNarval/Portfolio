@@ -34,7 +34,7 @@ p {
     color: $text;
     font-size: 3rem;
     @include desktop{
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 }
 a {
@@ -61,7 +61,7 @@ h1 {
     color: $primary;
     text-align: left;
     @include desktop{
-        font-size: 7vw;
+        font-size: 5.5vw;
     }
 }
 h2 {
