@@ -94,12 +94,12 @@
             .opciones{
                 display: contents;
                 .enlaces{
-                display: flex;
-                flex-direction: column;
-                justify-content:space-around;
-                align-items: center;
-                width: 100%;    
-                flex: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:space-around;
+                    align-items: center;
+                    width: 100%;    
+                    flex: auto;
                 }
             }
             
@@ -130,7 +130,7 @@ button{
     width: 100%;
     text-align: center;
     color: $text;
-    padding: 1rem;
+    padding: 1rem 0;
     cursor: pointer;
     border: 1px solid $primary;
     border-radius: 2rem;
