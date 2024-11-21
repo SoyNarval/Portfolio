@@ -130,7 +130,7 @@ button{
     width: 100%;
     text-align: center;
     color: $text;
-    padding: 1rem 0;
+    padding: 1rem;
     cursor: pointer;
     border: 1px solid $primary;
     border-radius: 2rem;
@@ -187,13 +187,7 @@ button{
         }
         
         .titulo{
-            margin-top: 4rem;
-            margin-bottom: 5rem;
             border-bottom: 1px solid $primary;
-
-            @include desktop{
-                margin-top: 4rem;
-            }
         }
         // About me
         .about{
@@ -220,9 +214,6 @@ button{
                 }
                 p{
                     margin: 0;
-                    &:last-child{
-                        margin-bottom: 2rem;
-                    }
                 }
             }
 
