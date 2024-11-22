@@ -89,4 +89,40 @@ function createStar() {
 // Crear estrellas continuamente
 setInterval(createStar, 100);
 
-// Solucionar barra de tareas
+// Modales
+
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("openModal");
+const span = document.getElementsByClassName("close")[0];
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const slides = document.querySelectorAll('.carousel img');
+const modalIngles = document.getElementById("modal-ingles");
+const cerrarIngles = document.getElementById("close1");
+let slideIndex = 0;
+
+function crearModal(nombre, idModal, idClose){
+    modal.style.display = "flex";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+    
+    console.log("cerrar");
+}
+
+function showSlides(n) {
+    slides[slideIndex].style.display = "none";
+    slideIndex += n;
+    if (slideIndex >= slides.length) {slideIndex = 0}
+    if (slideIndex < 0) {slideIndex = slides.length - 1}
+    slides[slideIndex].style.display = "block";
+}
+
+prev.addEventListener('click', () => {
+    showSlides(-1);
+});
+
+next.addEventListener('click', () => {
+    showSlides(1);
+});

@@ -129,7 +129,7 @@
                         <h4>Idiomas</h4>
                         <div>
                             <p class="contenedor-idiomas"><span>Español:</span>&nbsp;Nativo</p>
-                            <p onclick="" class="contenedor-idiomas ingles" style="cursor: pointer;"><span>Inglés:</span>&nbsp;Nivel C</p>
+                            <p onclick="crearModal('ingles', 'modal-ingles', '1')" class="contenedor-idiomas ingles" style="cursor: pointer;"><span>Inglés:</span>&nbsp;Nivel C</p>
                             <p class="contenedor-idiomas"><span>Checo:</span>&nbsp;Iniciándome</p>
                         </div>
                             
@@ -138,6 +138,13 @@
             </div>
             
         </section>
+
+        <!--Modal ingles -->
+        <div class="modal" id="modal-ingles">
+            <div class="modal-content" id="close1">
+                <span class="close">&times;</span>
+            </div>
+        </div>
         
         <section id="proyectos"> <!--Proyectos-->
             
@@ -164,8 +171,16 @@
 
             <!-- INICIO MODALES -->
 
-            <!--  Bienes raices -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="carousel">
 
+                    </div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
             
             
         </section>
