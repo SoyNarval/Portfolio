@@ -160,6 +160,11 @@ button{
         display: none;
     }
     section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: normal;
+        scroll-snap-align: start;
         &:first-child{
             padding-top: 20rem;
         }
@@ -173,13 +178,6 @@ button{
                 padding-top: 2rem;
             }
         }
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: normal;
-        box-sizing: border-box;
-        scroll-snap-align: start;
         
         &:first-child{
             @include tablet{

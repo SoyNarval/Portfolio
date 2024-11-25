@@ -89,40 +89,68 @@ function createStar() {
 // Crear estrellas continuamente
 setInterval(createStar, 100);
 
-// Modales
+//          MODALES
 
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("openModal");
-const span = document.getElementsByClassName("close")[0];
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
-const slides = document.querySelectorAll('.carousel img');
-const modalIngles = document.getElementById("modal-ingles");
-const cerrarIngles = document.getElementById("close1");
-let slideIndex = 0;
+// Modal Ingles
+const btnIngles = document.getElementById('btnIngles');
+const modalIngles = document.getElementById('modal-ingles');
+const closeIngles = document.getElementById('close1');
 
-function crearModal(nombre, idModal, idClose){
-    modal.style.display = "flex";
-}
+btnIngles.addEventListener('click', () =>{
+    modalIngles.style.display = "flex";
+})
 
-span.onclick = function() {
-    modal.style.display = "none";
-    
-    console.log("cerrar");
-}
+closeIngles.addEventListener('click', () =>{
+    modalIngles.style.display = "none";
+}) 
 
-function showSlides(n) {
-    slides[slideIndex].style.display = "none";
-    slideIndex += n;
-    if (slideIndex >= slides.length) {slideIndex = 0}
-    if (slideIndex < 0) {slideIndex = slides.length - 1}
-    slides[slideIndex].style.display = "block";
-}
 
-prev.addEventListener('click', () => {
-    showSlides(-1);
+
+//  Modal Bienes
+
+const btnBienes = document.getElementById('btnBienes');
+const closeBienes = document.getElementById('closeBienes')
+const bienes2 = document.getElementById('bienes2')
+const bienes3 = document.getElementById('bienes3')
+const bienes4 = document.getElementById('bienes4')
+const subBienes2 = document.getElementById('subBienes2')
+const subBienes3 = document.getElementById('subBienes3')
+const subBienes4 = document.getElementById('subBienes4')
+
+btnBienes.addEventListener('click', () =>{
+    modalBienes.style.display = "flex";
+})
+
+closeBienes.addEventListener('click', () =>{
+    modalBienes.style.display = "none";
+})
+
+subBienes2.addEventListener('click', () => {
+    // Calculamos la distancia a desplazar
+    const bienesRect2 = bienes2.getBoundingClientRect();
+    const carouselRect2 = carousel.getBoundingClientRect();
+    const distanciaADesplazar2 = bienesRect2.left - carouselRect2.left;
+
+    // Desplazamos suavemente el carrusel
+    carousel.scrollLeft = distanciaADesplazar2;
 });
 
-next.addEventListener('click', () => {
-    showSlides(1);
+subBienes3.addEventListener('click', () => {
+    // Calculamos la distancia a desplazar
+    const bienesRect3 = bienes3.getBoundingClientRect();
+    const carouselRect3 = carousel.getBoundingClientRect();
+    const distanciaADesplazar3 = bienesRect3.left - carouselRect3.left;
+
+    // Desplazamos suavemente el carrusel
+    carousel.scrollLeft = distanciaADesplazar3;
+});
+
+subBienes4.addEventListener('click', () => {
+    // Calculamos la distancia a desplazar
+    const bienesRect4 = bienes4.getBoundingClientRect();
+    const carouselRect4 = carousel.getBoundingClientRect();
+    const distanciaADesplazar4 = bienesRect4.left - carouselRect4.left;
+
+    // Desplazamos suavemente el carrusel
+    carousel.scrollLeft = distanciaADesplazar4;
 });

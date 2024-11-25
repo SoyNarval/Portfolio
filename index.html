@@ -129,7 +129,7 @@
                         <h4>Idiomas</h4>
                         <div>
                             <p class="contenedor-idiomas"><span>Español:</span>&nbsp;Nativo</p>
-                            <p onclick="crearModal('ingles', 'modal-ingles', '1')" class="contenedor-idiomas ingles" style="cursor: pointer;"><span>Inglés:</span>&nbsp;Nivel C</p>
+                            <p class="contenedor-idiomas ingles" id="btnIngles" style="cursor: pointer;"><span>Inglés:</span>&nbsp;Nivel C</p>
                             <p class="contenedor-idiomas"><span>Checo:</span>&nbsp;Iniciándome</p>
                         </div>
                             
@@ -141,8 +141,9 @@
 
         <!--Modal ingles -->
         <div class="modal" id="modal-ingles">
-            <div class="modal-content" id="close1">
-                <span class="close">&times;</span>
+            <div class="modal-ingles">
+                <span class="close" id="close1">&times;</span>
+                <img src="./build/img/capacidades/ingles.PNG" alt="calificacion ingles">
             </div>
         </div>
         
@@ -152,7 +153,7 @@
 
             <div class="proyectos">
                 
-                <button class="contenedor bienes neon" id="bienes" onclick="crearModal('bienes', 'modal-bienes-1', 'close')">
+                <button class="contenedor bienes neon" id="btnBienes">
                     <p>Página para una inmobiliaria usando <span>php</span>, <span>SQL</span> y <span>Sass</span></p>
                 </button>
 
@@ -169,17 +170,29 @@
                 </button>
             </div>
 
-            <!-- INICIO MODALES -->
+                    <!-- INICIO MODALES -->
 
-            <div id="myModal" class="modal">
+            <!-- MODAL BIENES -->
+            
+            <div id="modalBienes" class="modal">
+                <span class="close" id="closeBienes">&times;</span>
                 <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="carousel">
-
+                    <div class="carousel" id="carousel">
+                        <img src="./build/img/proyectos/bienes/2.jpeg" id="bienes2">
+                        <img src="./build/img/proyectos/bienes/3.jpeg" id="bienes3">
+                        <img src="./build/img/proyectos/bienes/4.jpeg" id="bienes4">
                     </div>
                 </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
+                <div style="
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;"
+                >
+                    <div class="sub" id="subBienes2"></div>
+                    <div class="sub" id="subBienes3"></div>
+                    <div class="sub" id="subBienes4"></div>
+                </div>
+                
             </div>
             
             
