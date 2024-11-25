@@ -122,3 +122,35 @@ closeBienes.addEventListener('click', () =>{
     modalBienes.style.display = "none";
 })
 
+//  Modal Salon
+
+const btnSalon = document.getElementById('btnSalon');
+const closeSalon = document.getElementById('closeSalon')
+const Salon2 = document.getElementById('Salon2')
+const Salon3 = document.getElementById('Salon3')
+const Salon4 = document.getElementById('Salon4')
+
+btnSalon.addEventListener('click', () =>{
+    modalSalon.style.display = "flex";
+})
+
+closeSalon.addEventListener('click', () =>{
+    modalSalon.style.display = "none";
+})
+
+
+//  Modal UpTask
+
+const btnTask = document.getElementById('btnTask');
+const closeTask = document.getElementById('closeTask')
+const Task2 = document.getElementById('Task2')
+const Task3 = document.getElementById('Task3')
+const Task4 = document.getElementById('Task4')
+
+btnTask.addEventListener('click', () =>{
+    modalTask.style.display = "flex";
+})
+
+closeTask.addEventListener('click', () =>{
+    modalTask.style.display = "none";
+})
