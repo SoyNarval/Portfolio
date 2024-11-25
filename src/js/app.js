@@ -113,9 +113,6 @@ const closeBienes = document.getElementById('closeBienes')
 const bienes2 = document.getElementById('bienes2')
 const bienes3 = document.getElementById('bienes3')
 const bienes4 = document.getElementById('bienes4')
-const subBienes2 = document.getElementById('subBienes2')
-const subBienes3 = document.getElementById('subBienes3')
-const subBienes4 = document.getElementById('subBienes4')
 
 btnBienes.addEventListener('click', () =>{
     modalBienes.style.display = "flex";
@@ -125,32 +122,3 @@ closeBienes.addEventListener('click', () =>{
     modalBienes.style.display = "none";
 })
 
-subBienes2.addEventListener('click', () => {
-    // Calculamos la distancia a desplazar
-    const bienesRect2 = bienes2.getBoundingClientRect();
-    const carouselRect2 = carousel.getBoundingClientRect();
-    const distanciaADesplazar2 = bienesRect2.left - carouselRect2.left;
-
-    // Desplazamos suavemente el carrusel
-    carousel.scrollLeft = distanciaADesplazar2;
-});
-
-subBienes3.addEventListener('click', () => {
-    // Calculamos la distancia a desplazar
-    const bienesRect3 = bienes3.getBoundingClientRect();
-    const carouselRect3 = carousel.getBoundingClientRect();
-    const distanciaADesplazar3 = bienesRect3.left - carouselRect3.left;
-
-    // Desplazamos suavemente el carrusel
-    carousel.scrollLeft = distanciaADesplazar3;
-});
-
-subBienes4.addEventListener('click', () => {
-    // Calculamos la distancia a desplazar
-    const bienesRect4 = bienes4.getBoundingClientRect();
-    const carouselRect4 = carousel.getBoundingClientRect();
-    const distanciaADesplazar4 = bienesRect4.left - carouselRect4.left;
-
-    // Desplazamos suavemente el carrusel
-    carousel.scrollLeft = distanciaADesplazar4;
-});
