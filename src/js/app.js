@@ -167,8 +167,11 @@ const Bebidas4 = document.getElementById('Bebidas4')
 
 btnBebidas.addEventListener('click', () =>{
     modalBebidas.style.display = "flex";
+    resetCarousel('carousel');
 })
 
 closeBebidas.addEventListener('click', () =>{
     modalBebidas.style.display = "none";
 })
+
+// Resetear carrusel
