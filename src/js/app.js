@@ -89,6 +89,8 @@ function createStar() {
 // Crear estrellas continuamente
 setInterval(createStar, 100);
 
+
+
 //          MODALES
 
 // Modal Ingles
@@ -153,4 +155,20 @@ btnTask.addEventListener('click', () =>{
 
 closeTask.addEventListener('click', () =>{
     modalTask.style.display = "none";
+})
+
+// Modal Bebidas
+
+const btnBebidas = document.getElementById('btnBebidas');
+const closeBebidas = document.getElementById('closeBebidas')
+const Bebidas2 = document.getElementById('Bebidas2')
+const Bebidas3 = document.getElementById('Bebidas3')
+const Bebidas4 = document.getElementById('Bebidas4')
+
+btnBebidas.addEventListener('click', () =>{
+    modalBebidas.style.display = "flex";
+})
+
+closeBebidas.addEventListener('click', () =>{
+    modalBebidas.style.display = "none";
 })

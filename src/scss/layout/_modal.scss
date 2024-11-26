@@ -81,12 +81,12 @@
     height: auto;
     left: 0;
     position: sticky;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 1rem;
     scroll-snap-align: center;
 
     @include tablet{
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 

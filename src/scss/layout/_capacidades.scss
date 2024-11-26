@@ -50,6 +50,7 @@
             @include grid(2, 2rem);
             flex: auto;
             margin-bottom: 0;
+            margin-right: 2rem;
             .tecnologias{
                 display: flex;
                 flex-direction: column;
@@ -134,5 +135,3 @@
             }
         }
 }
-
-// Barra de Carga

@@ -8,7 +8,7 @@
         margin: 2rem;
         margin-bottom: 6rem;
         width: 80vw;
-        height: 30vh;
+        height: 30rem;
         background-color: $primary;
         text-align: center;
         justify-self: center;
@@ -19,6 +19,7 @@
         
         p{
             opacity: 0;
+            margin: 0 2rem;
             span{
                 color: $accent;
             }
@@ -43,7 +44,7 @@
 
         .contenedor{
             min-width: 70%;
-            max-width: 300px;
+            max-width: 30rem;
             margin: 2rem auto; /* Centra el div horizontalmente */
             background-color: $primary;
             text-align: center;
@@ -59,11 +60,13 @@
 @include desktop{
     .proyectos{
         height: 100vh;
+        margin: 2rem 0;
         @include grid(2, 4rem);
 
             .contenedor{
                 min-width: 90%;
                 min-height: 50%;
+                height: 30rem;
                 margin: 0 auto; /* Centra el div horizontalmente */
                 background-color: $primary;
                 text-align: center;
@@ -85,5 +88,10 @@
 
 .uptask{
     background-image: url(/build/img/proyectos/task/1.PNG);
+    background-size: cover;
+}
+
+.bebidas{
+    background-image: url(/build/img/proyectos/bebidas/1.jpeg);
     background-size: cover;
 }
