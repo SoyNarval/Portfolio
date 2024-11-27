@@ -88,7 +88,10 @@
 
 .uptask{
     background-image: url(/build/img/proyectos/task/1.PNG);
-    background-size: cover;
+    background-size: contain;
+    @include tablet{
+        background-size: cover;
+    }
 }
 
 .bebidas{
