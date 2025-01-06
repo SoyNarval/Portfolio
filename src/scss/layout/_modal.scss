@@ -17,7 +17,13 @@
     background-color: #000000;
     border: 1px solid #888;
     width: 80%;
-    overflow: auto;
+    overflow-y: scroll;
+    margin: 2rem;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 // Modal Proyectos
@@ -28,17 +34,13 @@
     height: 100%;
     width: auto;
     object-fit: contain;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    &::-webkit-scrollbar {
-        display: none;
-    }
 }
 
 .img-proyectos img {
     height: auto;
     width: 100%;
-    border: 1rem solid #000000;
+    border: 1rem solid $primary;
+    
 }
 
 
