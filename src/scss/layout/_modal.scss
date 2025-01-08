@@ -19,8 +19,6 @@
     width: 80%;
     overflow-y: scroll;
     margin: 2rem;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -54,6 +52,7 @@
     width: 100%;
     justify-content: flex-end;
     padding-right: 8rem;
+    height: 10%;
 }
 
 .close {
