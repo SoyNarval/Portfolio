@@ -82,8 +82,11 @@
 }
 
 .salon{
-    background-image: url(/build/img/proyectos/salon/1.PNG);
+    background-image: url(/build/img/proyectos/claqueta.png);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .uptask{
